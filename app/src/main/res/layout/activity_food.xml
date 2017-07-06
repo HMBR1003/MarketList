@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.qwexo.foodlist.FoodList.FoodActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ToolbarStyle"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/takeoutButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="207dp"
+        android:layout_marginTop="47dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClicked"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hamButton"
+        app:srcCompat="@drawable/aa"
+        android:layout_marginStart="207dp" />
+
+    <ImageButton
+        android:id="@+id/footButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="52dp"
+        android:onClick="onClicked"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@+id/hamButton"
+        app:layout_constraintTop_toBottomOf="@+id/pizzaButton"
+        app:srcCompat="@drawable/aa"
+        android:layout_marginStart="43dp" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="33dp"
+        android:onClick="onClicked"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hamButton"
+        app:srcCompat="@drawable/aa"
+        android:layout_marginStart="16dp" />
+
+    <ImageButton
+        android:id="@+id/hamButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/aa"
+        android:onClick="onClicked"
+        android:layout_marginLeft="34dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/chickenButton"
+        android:layout_marginStart="34dp" />
+
+    <ImageButton
+        android:id="@+id/pizzaButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/aa"
+        android:onClick="onClicked"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="71dp"
+        app:layout_constraintLeft_toRightOf="@+id/chickenButton"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp" />
+
+    <ImageButton
+        android:id="@+id/chickenButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:onClick="onClicked"
+        app:srcCompat="@drawable/aa"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="46dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="82dp"
+        android:layout_marginStart="46dp" />
+</android.support.constraint.ConstraintLayout>
